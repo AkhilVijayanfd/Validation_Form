@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login Form Validation</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="label">User Login</h1>
+            <form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+                <div class="font">Name</div>
+                <input autocomplete="off" type="text" name="name1">
+                <div id="name_error">Please fill your name</div>
+                <div class="font font2">Email ID</div>
+                <input autocomplete="off" type="email" name="email">
+                <div id="email_error">Please fill your email id</div>
+                <div class="font font3">Password</div>
+                <input type="password" name="password">
+                <div id="password_error">Please fill your password</div>
+                <br>
+                <button type="submit">Login</button>
+
+            </form>
+        </div>
+        <script src="validate.js"></script>
+    </body>
+</html>
